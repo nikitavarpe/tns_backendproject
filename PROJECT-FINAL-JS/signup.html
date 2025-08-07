@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #ff9d00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 340px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #3399ff;
+}
+
+  </style>
+</head>
+<body>
+  <form onsubmit="return handleSignUp()">
+  <h2>Sign Up</h2>
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <input type="email" id="email" placeholder="Enter your email" required>
+  <input type="password" id="password" placeholder="Enter password" required>
+  <input type="password" id="confirm-password" placeholder="Confirm password" required>
+  <button type="submit">Sign Up</button>
+  <p id="signup-msg"></p>
+</form>
+
+<script src="signup.js"></script>
+
+</body>
+</html>

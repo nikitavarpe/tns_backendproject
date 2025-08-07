@@ -1,0 +1,209 @@
+POPPINS FONT
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background: #000;
+    position: sticky;
+    border-radius: 10px;
+}
+#cartItems{
+    height: fit-content;
+    width: 100%;
+}
+
+#citems {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    background: linear-gradient(to left, rgba(5, 222, 255, 0.5), transparent);
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#citems:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-image {
+    /* flex: 1 1 150px; */
+    max-width: 400px;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    /* border-radius: 8px; */
+}
+
+.cart-item-details {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.cart-item-details h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: black;
+}
+
+.cart-item-details h2 {
+    font-size: 1em;
+    margin: 8px 0;
+    color: black;
+}
+
+.cart-item-details h2 strong {
+    color:black;
+}
+
+.cart-item-details .quantity-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart-item-details .quantity-container label {
+    margin-right: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.cart-item-details .quantity-container input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart-item-details .quantity-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.cart-item-details .item-total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+#pay {
+    display: inline-block;
+    background-color: #e04874;  /* Pink color */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+
+#pay:hover {
+    background-color: #d03a61; /* Darker shade on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+#pay:active {
+    transform: scale(1);  /* Button returns to original size on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#remove{
+    outline: none;
+    border: none;
+    height: 30px;
+    background: none;
+    font-weight: 900;
+    align-content: center;
+}
+#remove:hover{
+    border-bottom: 1px solid #007bff;
+    color:#007bff;
+}
+
+
+@media (max-width: 768px) {
+    #pay {
+        padding: 12px 25px;  /* Adjust size for smaller screens */
+        font-size: 1em;  /* Smaller font size */
+    }
+}
+
+footer { 
+    background: linear-gradient(to left, rgba(5, 222, 255, 0.5), transparent);
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.copyright {
+    font-size: 18px;
+    color:black;
+    /* margin-top: 10px; */
+}
+
+.help {
+    font-size: 18px;
+    color: black;
+    /* margin-top: 10px; */
+}
+.help a{
+    list-style: none;
+    text-decoration-line: none;
+    font-size: 18px;
+    color:black;
+    margin-top: 10px;
+}
+.help a:hover{
+    list-style: none;
+    text-decoration-line: none;
+    font-size: 15px;
+    color:blue;
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    margin-top: 10px;
+}
+
+

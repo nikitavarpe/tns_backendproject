@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Welcome to the Home Page!</h2>
+  <p>You have successfully logged in.</p>
+  <button id="logoutBtn">Logout</button>
+
+  <script>
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      // Optional: Clear any localStorage or cookies if you use them
+      alert("You are now logged out!");
+      window.location.href = "signin.html";
+    });
+  </script>
+</body>
+</html>

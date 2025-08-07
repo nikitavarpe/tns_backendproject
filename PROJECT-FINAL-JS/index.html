@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKVYN online shopping center</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <!----------------- logo div -------------------->
+            <nav class="nav">
+
+                <div class="nav-logo">
+                    <img src="./assets/SHUBHLOGO.png">
+                </div>
+
+                <!------------------ menu options------------------->
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#" class="link"><i class="fa-solid fa-house"></i> Home</a></li>
+                    </ul>
+                </div>
+
+                <div class="search search-box">
+                    <input type="text" id="input-btn" placeholder="let's shop it..." spellcheck="true"></input>
+                    <i class="fa-brands fa-searchengin" id="search-icon"></i>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="./cart.html" class="link"><i class="fa-solid fa-cart-shopping "></i> cart</a></li>
+                    </ul>
+                </div>
+                <!------------ sign-in sign-up ---------------->
+                <div class="nav-button">
+                    <a href="signin.html"><button class="btn white-btn">Sign In</button></a>
+                    <a href="signup.html"><button class="btn">Sign Up</button></a>
+                </div>
+
+
+                <!-- -------------- menu button -------------- -->
+                <div class="nav-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- --------------------  section 1 info  --------------------->
+        <section class="home" id="home">
+            <div class="section-first">
+
+            <div class="content">
+               <h1>Bringing Mall to your Doorstep!!</h1><br>
+               <p>Welcome to BKVYN ONLINE SHOPPING  CENTER – Your Ultimate Online Shopping Destination!
+                <br><br>
+                At BKVYN ONLINE SHOPPING  CENTER, we bring you a seamless, convenient, and enjoyable shopping experience. Whether you’re looking for the latest fashion trends, cutting-edge gadgets, home essentials, or unique gifts, we have something for everyone. Our carefully curated selection offers top-quality products from trusted brands, all at unbeatable prices.
+            </div>
+
+            <div class="sideimage">
+                <img src="./assets/girls-shoping.png" alt="girls-shopping" height="500px">
+            </div>
+            
+            </div>
+        </section>
+
+        <!------------ section for js card ----------------->
+        <section class="cards-main">
+            <div id="cards">
+            </div>
+        </section>
+
+        <!------------------------- footer -------------------->
+        <footer>
+            <!-- <div class="footerr"></div> -->
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/?_rdr"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/B&Kambiradar0812/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/B&Kam-biradar-519049327/"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Sign up for our newsletter to receive updates and offers.</p>
+                    <form>
+                        <input id="foot-mail" type="email" placeholder="Your Email Address">
+                        <button id="fot-sub-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>@B&K; 2024 Your E-commerce Store. All Rights Reserved.</p>
+            </div>
+
+            <button id="top-btn"><a target="_top" href="">🐦‍🔥</a></button>
+        </footer>
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
